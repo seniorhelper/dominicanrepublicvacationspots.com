@@ -1,0 +1,2 @@
+# dominicanrepublicvacationspots.com
+dominicanrepublicvacationspots.com
