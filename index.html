@@ -1102,6 +1102,7 @@ header#top .logo-tagline{color:#0077b6!important}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTN0TYBL1P"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-FTN0TYBL1P');</script>
 <script>(function(){function s(n,p){try{gtag('event',n,p)}catch(e){}}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a)s('phone_click',{phone_number:a.getAttribute('href').slice(4),link_text:(a.textContent||'').trim().slice(0,60)})},true);document.addEventListener('submit',function(e){var f=e.target;if(!f||f.getAttribute('role')==='search'||/search/i.test(f.id+' '+f.className+' '+(f.action||'')))return;var id=f.id||f.getAttribute('name')||f.className||'form';if(/estimat|calc/i.test(id+' '+(f.action||'')))s('estimator_use',{form_id:id});s('generate_lead',{form_id:id})},true);window.etAB=function(n,v){var k='etab_'+n,x;try{x=localStorage.getItem(k)}catch(e){}if(!x||v.indexOf(x)<0){x=v[Math.floor(Math.random()*v.length)];try{localStorage.setItem(k,x)}catch(e){}}s('ab_view',{experiment:n,variant:x});try{gtag('set','user_properties',{['ab_'+n]:x})}catch(e){}document.documentElement.setAttribute('data-ab-'+n,x);return x}})();</script>
+<style id="egx-css">.egx{max-width:980px;margin:2.2rem auto;padding:1.4rem 1.2rem;border:1px solid rgba(0,0,0,.12);border-radius:14px;background:#fff;color:#1b2730}.egx h2,.egx h3{margin:0 0 .4rem;font-size:1.35rem;line-height:1.25;color:#1b2730}.egx p{margin:0 0 .8rem;color:#3b4852;font-size:.98rem}.egx .eg-widget{min-height:280px}.egx .egx-disc{font-size:.82rem;color:#55626c;margin:.8rem 0 0}.egx .egx-disc a{color:inherit;text-decoration:underline}@media(max-width:600px){.egx{margin:1.6rem 12px;padding:1rem .8rem}.egx .eg-widget{min-height:400px}}</style>
 </head>
 
 <body>
@@ -1395,7 +1396,14 @@ header#top .logo-tagline{color:#0077b6!important}
 
 <!-- ===== TRIP PLANNER ===== -->
 <div style="background: linear-gradient(135deg, #e0f7fa 0%, #fff8e7 100%); padding: 70px 24px;" id="planner">
-  <section style="padding:0; max-width:900px;">
+  
+<section class="egx" aria-label="Check hotels in your favorite spot">
+  <h2>Check hotels in your favorite spot</h2>
+  <p>Search Punta Cana, Puerto Plata, Cabarete, Las Terrenas, La Romana or Santo Domingo for your travel dates.</p>
+  <div class="eg-widget" data-widget="search" data-program="us-expedia" data-lobs="stays" data-network="pz" data-camref="1100l5QSrc" data-pubref="drvs-spots"></div>
+  <p class="egx-disc"><strong>Affiliate disclosure:</strong> Dominican Republic Vacation Spots is part of the Expedia Group affiliate program. If you book through this search, we may earn a commission at no extra cost to you. Prices and availability come from Expedia and change often. It does not affect which places we write about. <a href="/privacy/#affiliate">How we make money</a>.</p>
+</section>
+<section style="padding:0; max-width:900px;">
     <div class="section-label" data-lang="en">Interactive Trip Planner</div>
     <div class="section-label" data-lang="es" style="display:none;">Planificador de Viaje Interactivo</div>
     <h2 class="section-title" data-lang="en">What Kind of Traveler Are You?</h2>
@@ -1842,6 +1850,7 @@ header#top .logo-tagline{color:#0077b6!important}
     <a href="https://showers4less.com" target="_blank" rel="noopener nofollow">Showers4Less.com</a>
   </div>
   <p style="font-size:12px; color:rgba(255,255,255,0.35); margin-top:20px;">© 2026 DominicanRepublicVacationSpots.com · All Rights Reserved · <a href="https://www.godominicanrepublic.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.35);">Official DR Tourism</a></p>
+<p style="text-align:center;font-size:.85rem;margin:14px 0"><a href="/about/" style="color:inherit">About</a> &middot; <a href="/contact/" style="color:inherit">Contact</a> &middot; <a href="/privacy/" style="color:inherit">Privacy &amp; affiliate disclosure</a></p>
 </footer>
 
 <script>
@@ -1988,5 +1997,6 @@ document.getElementById('adv-form').addEventListener('fs:sent', function() {
   });
 })();
 </script>
+<script class="eg-widgets-script" src="https://creator.expediagroup.com/products/widgets/assets/eg-widgets.js" defer></script>
 </body>
 </html>
